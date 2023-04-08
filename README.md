@@ -10,7 +10,7 @@ The web application has the following endpoints:
 2. GET /candies/:id - Get a specific candy from the inventory by ID.
 3. POST /candies - Add a new candy to the inventory.
 4. PUT /candies/:id - Update an existing candy in the inventory by ID.
-5. DELETE /candies/:id - Remove a candy from the inventory by ID.
+5. DELETE /candies/:id - Remove a candy from the inventory by ID.  
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 First, run the development server:
