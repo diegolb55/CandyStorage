@@ -1,5 +1,5 @@
 
-
+ 
 ## Candy Storage Inventory Web App using MongoDB and Node.js
 # Description
 This project is a web application that allows you to manage a candy storage inventory. It uses Node.js as the backend language and MongoDB as the database. This web application has CRUD (Create, Read, Update, Delete) endpoints that enable users to interact with the database and perform the necessary operations on the inventory.
