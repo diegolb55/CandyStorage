@@ -35,6 +35,8 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
+      <h1 className='title'>Candy Inventory System</h1>
+
       <CreateCandy setCandies={setCandies}/>
       <Candies candies={candies} setCandies={setCandies} />
     </div>

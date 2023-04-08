@@ -1,40 +1,8 @@
 import { useState } from "react";
-// import { createStyles, Avatar, Group, Textarea, Button } from "@mantine/core";
-// import { useForm } from "@mantine/form";
-// import { showNotification } from '@mantine/notifications';
-// import { Check } from 'tabler-icons-react';
 
-const demoUser = {
-    id: "6276d0c602ce122f7b8b11ec",
-    name: "Jesse Hall",
-    nickname: "codestackr",
-    picture:
-        "https://lh3.googleusercontent.com/a-/AOh14GgPdA54bhnYcSngbZxMuSLe-khjk-BaaKWsvmxD=s96-c",
-};
-
-// const useStyles = createStyles((theme) => ({
-//   flutter: {
-//     padding: `${theme.spacing.lg}px ${theme.spacing.xl}px`,
-//   },
-//   createFlutter: {
-//     justifyContent: "center",
-//   },
-//   media: {
-//     width: "50vw",
-//     [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
-//       width: "25vw",
-//     },
-//   },
-// }));
 
 const CreateCandy = ({ setCandies }) => {
-    const user = demoUser;
-    //   const { classes } = useStyles();
-    //   const form = useForm({
-    //     initialValues: {
-    //       flutter: "",
-    //     },
-    //   });
+    
     const [inputDisabled, setInputDisabled] = useState(false);
 
     const [name, setName] = useState("")
@@ -74,42 +42,21 @@ const CreateCandy = ({ setCandies }) => {
         // showSuccess();
     };
 
-    // const showSuccess = () => {
-    //     showNotification({
-    //         title: "Success",
-    //         message: "Your flutter has been sent",
-    //         icon: <Check size={18} />,
-    //         autoClose: 5000,
-    //         styles: (theme) => ({
-    //             root: {
-    //                 borderColor: theme.colors.green[6],
-    //             }
-    //         }),
-    //     });
-    // };
+
 
     return (
-        // <Group position={"center"} mt={10} mb={20}>
-        //     <Avatar src={user.picture} alt={user.name} radius="xl" />
-        //     <form onSubmit={form.onSubmit((value) => onSubmitFlutter(value))}>
-        //         <Group>
-        //             <Textarea
-        //                 required
-        //                 placeholder="Send a flutter..."
-        //                 variant="filled"
-        //                 className={classes.media}
-        //                 {...form.getInputProps("flutter")}
-        //             />
-        //             <Button type="submit" disabled={inputDisabled}>Send</Button>
-        //         </Group>
-        //     </form>
-        // </Group>
+
         <div style={{
             padding: 20,
-            border: "2px solid red"
+            width: "80%",
+            margin: "50px auto",
+            borderRadius:25,
+            boxShadow: "5px 5px 20px 0px #00000053",
         }}>
             <h3>Add a candy...</h3>
-            <form onSubmit={onSubmitCandy}>
+            <form onSubmit={onSubmitCandy}
+                className="createCandy"
+            >
                 <input type="text" value={name}
                     placeholder="name"
                     onChange={(e)=>setName(e.target.value)}

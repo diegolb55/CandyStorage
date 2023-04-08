@@ -23,7 +23,7 @@ import {
             },
             body: JSON.stringify({
               dataSource: process.env.MONGODB_DATA_SOURCE,
-              database: "social_butterfly",
+              database: "candy_storage",
               collection: "users",
             }),
           });
@@ -40,7 +40,7 @@ import {
               },
               body: JSON.stringify({
                 dataSource: process.env.MONGODB_DATA_SOURCE,
-                database: "social_butterfly",
+                database: "candy_storage",
                 collection: "users",
                 filter: { _id: { $oid: readDataJson.document._id } },
                 update: {
@@ -74,7 +74,7 @@ import {
             },
             body: JSON.stringify({
               dataSource: process.env.MONGODB_DATA_SOURCE,
-              database: "social_butterfly",
+              database: "candy_storage",
               collection: "users",
               filter: { _id: { $oid: req.body._id } },
               update: {
