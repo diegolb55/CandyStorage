@@ -24,7 +24,7 @@ export default function Home() {
       const getUserJson = await getUser.json();
       setUser(getUserJson);
 
-      const getCandies = await fetch("/api/candies");
+      const  getCandies = await fetch("/api/candies");
       const getCandiesJson = await getCandies.json();
       setCandies(getCandiesJson);
 
